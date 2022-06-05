@@ -1,5 +1,4 @@
 'use strict'
-alert('Cargado con exito');
 
 //Función para calcular el total y desplegarlo en la tabla 
 function calcular(){
@@ -7,7 +6,7 @@ function calcular(){
     var total = 0;
     var cant1 = document.getElementById("cant1").value; 
     var mt = document.getElementById("tot1");
-
+    //Condicional de compra para evitar cantidades negativas y letras
     if (cant1>=1) {
         total = (cant1 * pre);
         console.log(total);
